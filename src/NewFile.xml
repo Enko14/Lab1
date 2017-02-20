@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<authors>
+	<author id="1" name= "Лев Николаевич Толстой" birthdate="1828">
+ 		<books>
+ 			<book id="1" bookname="Война и мир">
+				 <year> 1869 </year>
+				 <type> Novel </type> 
+ 			</book>
+			 <book id="2" bookname="Смерть Ивана Ильича " >
+				 <year> 1886 </year>
+				 <type> Narrative </type>
+ 			</book>
+			 <book id="3" bookname="Метель">
+ 				<year>1856</year>
+ 				<type> Story </type>
+ 			</book>
+ 		</books>
+	 </author>
+	<author id="2" name= "Николай Васильевич Гоголь" birthdate="1809">
+		<books>
+			<book id="4" bookname="Ночь перед Рождеством ">
+				<year>1830</year>
+				<type> Narrative </type>
+			</book>
+			<book id="5" bookname="Гетьман">
+				<year>1832</year>
+				<type> Novel </type>
+			</book>
+			<book id="6" bookname="Ганц Кюхельгартен">
+				<year>1829</year>
+				<type> Poem </type>
+			</book>
+		</books>
+	</author>
+	<author id="3" name="Иван Сергеевич Тургенев" birthdate="1818">
+		<books>
+			<book  id="7" bookname="Отцы и дети">
+				<year> 1860 </year>
+				<type> Novel </type>
+			</book>
+			<book id="8" bookname="Записки охотника">
+			<year> 1852 </year>
+			<type> Narrative </type>
+			</book>
+		</books>
+	</author>
+</authors>
