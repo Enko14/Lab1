@@ -13,7 +13,7 @@ import javax.xml.bind.annotation.XmlSeeAlso;
 @XmlSeeAlso({Authors.class})
 public class Authors {
 	@XmlElement (name="author")
-	private List<Author> author;
+	public List<Author> author;
 
 	public List<Author> getAuthor() {
 		return author;
@@ -22,6 +22,14 @@ public class Authors {
 	public void setAuthor(List<Author> author) {
 		this.author = author;
 	}
-	
+
+	public Authors(List<Author> author) {
+		super();
+		this.author = author;
 	}
 
+	public Authors() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	}
