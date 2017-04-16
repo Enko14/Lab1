@@ -6,6 +6,7 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlSeeAlso;
+import javax.xml.bind.annotation.XmlTransient;
 
 @XmlSeeAlso({Book.class})
 @XmlAccessorType(XmlAccessType.FIELD)
@@ -18,7 +19,7 @@ public class Book {
 	
 	@XmlElement(name = "type")
 	private String type;
-
+	
 	public int getId() {
 		return id;
 	}
@@ -50,5 +51,4 @@ public class Book {
 	public void setType(String type) {
 		this.type = type;
 	}
-
 }
