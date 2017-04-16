@@ -47,7 +47,7 @@ public class AddElement {
 	    
 	    
 	    Book book3 =new Book();
-	    book3.setId(11);
+	    book3.setId(12);
 	    book3.setBookname("Книга");
 	    book3.setYear(18550);
 	    book3.setType("Novel");
@@ -71,23 +71,23 @@ public class AddElement {
 	
 		convertObjectToXml(authors, fileName);
 		searchBook(10, allbooks);
-	 Authors unmarshAuthors = fromXmlToObject(fileName);
-     if (unmarshAuthors != null) {
-         System.out.println(unmarshAuthors.toString()); }}
+//	 Authors unmarshAuthors = fromXmlToObject(fileName);
+  //   if (unmarshAuthors != null) {
+ ///        System.out.println(unmarshAuthors.toString()); }}
     
 	
-	  private static Authors fromXmlToObject(String fileName) {
-	        try {
-	            // создаем объект JAXBContext - точку входа для JAXB
-	            JAXBContext jaxbContext = JAXBContext.newInstance(Authors.class);
-	            Unmarshaller un = jaxbContext.createUnmarshaller();
-
-	            return (Authors) un.unmarshal(new File(fileName));
-	        } catch (JAXBException e) {
-	            e.printStackTrace();
-	        }
-	        return null;
-	    }
+//	  private static Authors fromXmlToObject(String fileName) {
+//	        try {
+//	            // создаем объект JAXBContext - точку входа для JAXB
+//	            JAXBContext jaxbContext = JAXBContext.newInstance(Authors.class);
+//	            Unmarshaller un = jaxbContext.createUnmarshaller();
+//
+//	            return (Authors) un.unmarshal(new File(fileName));
+//	        } catch (JAXBException e) {
+//	            e.printStackTrace();
+//	        }
+//	        return null;
+		}
 	 private static void convertObjectToXml(Authors authors ,String fileName) throws JAXBException, SAXException
 	 { try {
 	     JAXBContext jaxbContext = JAXBContext.newInstance(Authors.class);
@@ -120,5 +120,3 @@ public class AddElement {
 	        }
 	    }}
 	 
-
-
